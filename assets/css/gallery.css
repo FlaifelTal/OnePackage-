@@ -1,0 +1,92 @@
+
+.del-btn {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    /* cursor: pointer; */
+    text-decoration: none;
+    border-radius: 4px;
+}
+.del-btn:hover {
+    color: red;
+    background-color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007fc4;
+    color: white;
+    text-align: center;
+    
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* 
+td img {
+    max-width: 100px;
+    height: auto;
+} */
+
+/* .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+} */
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007fc4;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.pagination a:hover {
+    background-color: #007fc4;
+    color: white;
+}
+.first{
+    background-color: #007fc4; 
+    color: white !important;
+
+}
+/* a{
+    text-decoration: none;
+} */
+.edit-btn {
+    background-color: #007fc4;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    /* cursor: pointer; */
+    text-decoration: none;
+    border-radius: 4px;
+}
+.edit-btn:hover {
+    background-color: white;
+}

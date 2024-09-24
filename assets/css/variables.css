@@ -1,0 +1,14 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: #007fc4;
+    --font-family: "Cairo", sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 36px;
+    --font-size-small: 14px;
+    --font-size-med: 18px;
+    --spacing: 15px;
+    /* --border-color: rgb(168, 168, 168);
+    --overlay-color: rgba(99, 190, 70, 0.7); */
+  }
+  

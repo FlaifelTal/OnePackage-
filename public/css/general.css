@@ -1,0 +1,36 @@
+@import url('variables.css');
+@import url('blueBorder.css');
+@import url('footer.css');
+@import url('header.css');
+@import url('news.css');
+@import url('p.css');
+@import url('p1.css');
+@import url('products.css');
+@import url('slider.css');
+
+
+body {
+    font-family: var(--font-family);
+  }
+  .container {
+    max-width: 1100px;
+  }
+  @media (max-width: 576px) {
+    .container {
+        max-width: 100%; 
+        overflow: hidden;
+      }
+    }
+  @media (min-width: 577px) and (max-width: 768px) {
+
+  .container {
+    max-width: 100%; 
+    overflow: hidden;
+  }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+    .container {
+        max-width: 100%; 
+        overflow: hidden;
+      }
+    }

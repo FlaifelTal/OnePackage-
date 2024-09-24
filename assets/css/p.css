@@ -1,0 +1,68 @@
+@import url("variables.css");
+
+.position-relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(99, 190, 70, 0.7); /* Black overlay with 50% opacity */
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  margin: 0;
+}
+.no-gutter .col,
+.no-gutter [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.text-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-med);
+}
+.line1,
+.line2 {
+  display: block;
+}
+@media (max-width: 576px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+}

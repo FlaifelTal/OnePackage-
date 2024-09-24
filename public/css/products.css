@@ -1,0 +1,242 @@
+@import url("variables.css");
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Adjust based on your font-size */
+  max-height: 3em; /* Should be line-height * number of lines */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#smoke {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+  z-index: 9999;
+}
+
+#popup_bar {
+  background-color: var(--third-color);
+  color: var(--primary-color); 
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  cursor: move;
+}
+
+#btn_close {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#popup_content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#popup_img img {
+  max-height: 150px;
+  max-width: 160px;
+  object-fit: cover;
+
+}
+
+#popup_text {
+  padding-top: 30px;
+  max-width: 300px;
+  text-align: center;
+  }
+
+#popup_text h2 {
+  margin-top: 0;
+}
+.heading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  /* padding-left: 30px; */
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blue-text {
+  font-size: var(--font-size-large);
+  /* 36px; */
+  color: #007fc4;
+}
+
+.grey-text {
+  font-size: 36px;
+  color: #757575;
+}
+
+.btn {
+  border: 1px solid rgb(168, 168, 168);
+  background-color: transparent;
+  color: #BBBBBB;
+  border-radius: 0;
+  padding: 10px 30px;
+  margin-right: 5px;
+  font-size: var(--font-size-small);
+  /* 14px; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.card-img-top {
+  max-height: 150px;
+  max-width: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.btn1 {
+  border: 1px solid rgb(168, 168, 168);
+  background-color: transparent;
+  color: var(--third-color);
+  border-radius: 0;
+  padding: 10px 50px;
+  /* margin-right: 5px; */
+  font-size: var(--font-size-small);
+  /* 14px; */
+  /* cursor: pointer; */
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn1:hover {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}
+
+@media (max-width: 576px) {
+  
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+  .heading-container {
+    padding-top: 10px;
+    gap: 3px;
+  }
+
+  .blue-text,
+  .grey-text {
+    font-size: 24px;
+  }
+
+  .btn,
+  .btn1 {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  
+#popup {
+  display: none;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 300px;
+  height: 500px;
+  z-index: 9999;
+}
+
+}
+@media (min-width: 577px) and (max-width: 768px) {
+ 
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+
+  .heading-container {
+    padding-top: var(--spacing);
+    gap: 8px;
+  }
+  .blue-text,
+  .grey-text {
+    font-size: 30px;
+  }
+
+  .btn,
+  .btn1 {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 0;
+  }
+  .heading-container {
+    padding-top: var(--spacing);
+    gap: 8px;
+  }
+  .blue-text,
+  .grey-text {
+    font-size: 30px;
+  }
+  .btn,
+  .btn1 {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+}
+
+
+

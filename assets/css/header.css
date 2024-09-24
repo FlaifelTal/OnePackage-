@@ -1,0 +1,47 @@
+@import url("variables.css");
+
+.nav-link.text-dark.custom-spacing,
+.nav-item a {
+  color: var(--secondary-color);
+}
+.nav-item a {
+  font-size: var(--font-size-med);
+  text-decoration: none;
+}
+.icon {
+  font-size: var(--font-size-med);
+  color: var(--secondary-color);
+  margin: 3px;
+  border: 1.5px solid #b8b8b8;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6;
+  padding-bottom: 6;
+}
+.icon-special {
+  font-size: var(--font-size-med);
+  background-color: red;
+  color: var(--primary-color);
+  margin: 3px;
+  border: 1.5px solid red;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6;
+  padding-bottom: 6;
+}
+.marg {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.nav {
+  padding-left: var(--spacing);
+  /* 15px; */
+  padding-right: var(--spacing);
+}
+.r {
+  padding-right: 22px;
+}
+
+.custom-spacing {
+  margin-right: 146px; /* Adjust this value as needed */
+}

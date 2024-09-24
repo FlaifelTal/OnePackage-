@@ -1,0 +1,127 @@
+@import url("variables.css");
+
+.overlay-text {
+  padding-top: 170px;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: var(--font-size-base);
+  /* 16px; */
+  padding-right: 490px;
+}
+
+.overlay-text p {
+  padding-right: 50px;
+}
+.button-overlay {
+  margin-top: 24px;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 9px 30px;
+  font-size: var(--font-size-small);
+  /* 14px; */
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.container-change {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  background: url("../img/background.jpg")  no-repeat center center; /* Add your background image here */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .overlay-text {
+    font-size: var(--font-size-med);
+    padding-right: 20px;
+  }
+
+  .container-change {
+    height: 400px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .overlay-text {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+
+  .container-change {
+    height: 500px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .overlay-text {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+  .container-change {
+    height: 500px;
+  }
+}
+
+
+
+
+.wrap{
+    position: relative
+}
+.slide{
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 660px;
+}
+.slide1{
+    background-image: url("../img/background.jpg")
+    /* background: url("../img/background.jpg") */
+}
+.slide2{
+    background-image: url("../img/hh.jpg")
+}
+.slide3{
+    background-image: url("../img/mm.jpg")
+}
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide-content span{
+    color: #fff;
+    font-size: 5rem
+}
+/* .arrow{
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px
+} */
+/* #arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent #fff;
+    left: 0;
+    margin-left: 30px;
+}
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color: transparent #fff transparent #fff;
+    right: 0;
+    margin-right: 30px;
+} */
